@@ -5,7 +5,7 @@ Internship Task Submissions for codsoft.
 Task list
 
 
-#TAsk 1:To-Do List
+#Task 1:To-Do List
 -Built a command line application using python.
 -Features:Add,View,Update,Delete and exit.
 
