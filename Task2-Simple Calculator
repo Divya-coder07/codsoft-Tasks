@@ -1,0 +1,51 @@
+def calculator():
+     print("\nSimple Calculator")
+
+
+     num1=float(input("Enter the First Number:"))
+     num2=float(input("Enter the Second Number:"))
+    
+
+     print("Select Operation:")
+     print("1.Addition(+)")
+     print("2.Subtraction(-)")
+     print("3.Multiplication(*)")
+     print("4.Division(/)")
+
+     Choice=input("Enter your Choice (1/2/3/4):")
+
+     if Choice == '1':
+        result=num1+num2
+        Operation = '+'
+
+     elif Choice=='2':
+        result=num1-num2
+        Operation='-'
+
+     elif Choice=='3':
+        result=num1*num2
+        Operation='*'
+
+     elif Choice=='4':
+        if num2==0:
+            print("Error:Division by zero is not possible !")
+            return
+        result=num1/num2
+        Operation='/'
+     else:
+            print("Invalid Choice! Enter valid Choice 1/2/3/4.")
+            return
+        
+     print(f"\nResult:{num1} {Operation} {num2} = {result}")
+
+
+     while True:
+         again=input("Do you want to perform another operation(yes/no)?:")
+         if again.strip().lower()=="yes":
+             print (calculator())
+         else:
+          if again.strip().lower()=="no":
+             print("Exiting calculator.Thank You!")
+             break
+          
+calculator()
