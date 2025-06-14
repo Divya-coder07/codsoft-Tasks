@@ -21,5 +21,7 @@ imported random and string to generate random strong password.
 Submitted by:
 
 Name:Divya S
+
 Internship:Codsoft
+
 Batch:june2025
